@@ -22,3 +22,14 @@ def movies(request, slug, id):
 
 def view_404(request, exception):
     return redirect('/')
+
+
+
+
+
+
+
+
+
+
+    
