@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+{% load static %}
+{% block title %}
+    <title>Register</title>
+{% endblock title %}
+{% block content %}
+    <div class="container">
+        <form action="" method="POST" enctype="multipart/form-data" class="w-50 m-auto border text-light p-4">
+            {% csrf_token %}
+            <label for="">Kullanıcı Adı</label>
+            <input type="text" name="kullanici" id="" class="form-control">
+            <label for="">Email</label>
+            <input type="email" name="email" id="" class="form-control">
+            <label for="">Resim</label>
+            <input type="file" name="resim" id="" class="form-control">
+            <label for="">Telefon Numarası</label>
+            <input type="tel" name="telefon" id="" class="form-control">
+            <label for="">Şifre</label>
+            <input type="password" name="sifre1" id="" class="form-control">
+            <label for="">Şifre Onay</label>
+            <input type="password" name="sifre2" id="" class="form-control">
+            <input type="submit" value="Kayıt Ol" class="btn btn-primary mt-2">
+        </form>
+    </div>
+{% endblock content %}
