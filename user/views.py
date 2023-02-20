@@ -4,6 +4,9 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from .forms import *
 # Create your views here.
+
+# yorum satırı
+
 def userRegister(request):
     if request.method == 'POST':
         kullanici = request.POST['kullanici']
